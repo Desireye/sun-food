@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Food</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./img/">
+</head>
+<body class="text-xs text-yellow-600 font-body">
+    <!-- content wrapper -->
+    <div class="grid md:grid-cols-3"> 
+        <!-- nav -->
+        <div class=" md:flex md:justify-end md:col-span-1">
+            <nav class="text-right">
+                <div class="flex justify-between items-center">
+                    <h1 class="font-bold text-lg uppercase p-4 pb-1 flex">
+                        <svg class="w-8 -mt-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path d="M10 2a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 0110 2zM10 15a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 0110 15zM10 7a3 3 0 100 6 3 3 0 000-6zM15.657 5.404a.75.75 0 10-1.06-1.06l-1.061 1.06a.75.75 0 001.06 1.06l1.06-1.06zM6.464 14.596a.75.75 0 10-1.06-1.06l-1.06 1.06a.75.75 0 001.06 1.06l1.06-1.06zM18 10a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0118 10zM5 10a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 015 10zM14.596 15.657a.75.75 0 001.06-1.06l-1.06-1.061a.75.75 0 10-1.06 1.06l1.06 1.06zM5.404 6.464a.75.75 0 001.06-1.06l-1.06-1.06a.75.75 0 10-1.061 1.06l1.06 1.06z" />
+                        </svg> 
+                        <a href="/">Sun Food</a>
+                    </h1>
+
+                    <div class="px-4 cursor-pointer md:hidden" id="click-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 
+                            4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75
+                            -.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                        </svg>                          
+                    </div>
+                </div>
+
+                <ul class="pt-4 text-lg uppercase mt-6 hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold py-1">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-green-500">
+                            <span class="pt-4">Home</span>
+                            <svg class="w-6 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v
+                                -3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                            <span class="pt-4">About</span>
+                            <svg class="w-6 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM8.94 6.94a.75.75 0 11-1.061-1.061 3 3 0 112.871
+                                 5.026v.345a.75.75 0 01-1.5 0v-.5c0-.72.57-1.172 1.081-1.287A1.5 1.5 0 108.94 6.94zM10 15a1 1 0 100-2 1 1 0 000 
+                                 2z" clip-rule="evenodd" />
+                            </svg>     
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                            <span class="pt-4">Contact</span>
+                            <svg class="w-6 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                <path d="M8 16.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75z" />
+                                <path fill-rule="evenodd" d="M4 4a3 3 0 013-3h6a3 3 0 013 3v12a3 3 0 01-3 3H7a3 3 0 01-3-3V4zm4-1.5v.75c0 .414.
+                                336.75.75.75h2.5a.75.75 0 00.75-.75V2.5h1A1.5 1.5 0 0114.5 4v12a1.5 1.5 0 01-1.5 1.5H7A1.5 1.5 0 015.5 16V4A1.5 
+                                1.5 0 017 2.5h1z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- end of nav -->
+
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+            <!-- log/sign in -->
+            <div class="text-primary flex justify-center md:justify-end ">
+                <a href="#" class="button border-primary md:border-2 hover:bg-primary hover:text-white 
+                transition ease-out duration-500">Log In</a>
+                <a href="#" class="ml-4 button  border-primary md:border-2 hover:bg-primary hover:text-white 
+                transition ease-out duration-500">Sign Up</a>
+            </div>
+
+            <!-- recipes -->
+            <header>
+                <h2 class="text-gray-700 text-6xl font-semibold mt-12">Recipes</h2>
+                <h3 class="text-2xl font-semibold">For you!</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold text-base mt-12 pb-2 border-b border-green-200">Latest Recipes</h4>
+
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                    <!-- latest recipes go here -->
+                    <div class="card">
+                        <img src="./img/friedrice.webp" alt="fried rice" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold text-lg">Nigerian Fried Rice Recipe</span>
+                            <span class="block text-gray-500 text-sm pt-1">Recipe by Precious</span>
+                        </div>
+
+                        <div class="badge">
+                            <svg class="w-4 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>         
+                            <span>2 hours</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/eforiro.jpg" alt="efo riro" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold text-lg">Efo Riro Recipe</span>
+                            <span class="block text-gray-500 text-sm pt-1">Recipe by Chidera</span>
+                        </div>
+
+                        <div class="badge">
+                            <svg class="w-4 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>  
+                            <span>3 hours</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/ricenstew.webp" alt="rice and stew" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold text-lg">Rice and Stew Recipe</span>
+                            <span class="block text-gray-500 text-sm pt-1">Recipe by Faith</span>
+                        </div>
+
+                        <div class="badge">
+                            <svg class="w-4 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>  
+                            <span>1 hour</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/jollofrice.jpeg" alt="jollof rice" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold text-lg">Jollof Rice Recipe</span>
+                            <span class="block text-gray-500 text-sm pt-1">Recipe by Doyin</span>
+                        </div>
+
+                        <div class="badge">
+                            <svg class="w-4 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>  
+                            <span>2 hours</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/smallchops.jpg" alt="small chops" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold text-lg">Small Chops Recipe</span>
+                            <span class="block text-gray-500 text-sm pt-1">Recipe by Olamide</span>
+                        </div>
+
+                        <div class="badge">
+                            <svg class="w-4 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>  
+                            <span>2 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="font-bold text-base mt-12 pb-2 border-b border-green-200">Most Popular</h4>
+
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                    <!-- most popular recipes go here -->
+                    <div class="card">
+                        <img src="./img/ofada.jpg" alt="ofada rice" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold text-lg">Ofada Rice Recipe</span>
+                            <span class="block text-gray-500 text-sm pt-1">Recipe by Desire</span>
+                        </div>
+
+                        <div class="badge">
+                            <svg class="w-4 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>  
+                            <span>2 hours</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/bole.jpg" alt="bole" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold text-lg">Bole Recipe</span>
+                            <span class="block text-gray-500 text-sm pt-1">Recipe by Temi</span>
+                        </div>
+
+                        <div class="badge">
+                            <svg class="w-4 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>  
+                            <span>2 hours</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/suya.jpg" alt="suya" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold text-lg">Suya Recipe</span>
+                            <span class="block text-gray-500 text-sm pt-1">Recipe by Soneye</span>
+                        </div>
+
+                        <div class="badge">
+                            <svg class="w-4 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>  
+                            <span>30 mins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="bg-secondary-100 text-secondary-200 button hover:shadow-inner
+                    transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300
+                    mt-12" id="load-btn">Load More</div>
+                </div>
+                <p id="nothing" class="text-center mt-4 text-red-600"></p>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
